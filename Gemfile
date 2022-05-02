@@ -31,6 +31,7 @@ group :production do
   gem 'net-sftp'
   gem 'mail', '= 2.6.3' # patched
   gem 'json', '1.8.6'
+  gem 'nokogiri', '1.6.8.1'
 end
 
 gem 'rspec'

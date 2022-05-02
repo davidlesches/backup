@@ -10,13 +10,22 @@ operations. It provides an elegant DSL in Ruby for _modeling_ your backups. Back
 databases, storage protocols/services, syncers, compressors, encryptors and notifiers which you can mix and match. It
 was built with modularity, extensibility and simplicity in mind.
 
+# Install
+
+Use this
+
+`
+  gem install specific_install
+  gem install https://github.com/davidlesches/backup -b david
+`
+
 [Installation][] &middot; [Release Notes][] &middot; [Documentation][] &middot; [Issues][] &middot; [Features][] &middot; [Chat][Gitter]
 
 Please use the Backup features [issue tracker][Features] to suggest new features.
 Only use the Backup gem [issue tracker][Issues] for bugs and other issues.
 We're also available on [Gitter] for questions and problems.
 
-**Copyright (c) 2009-2016 [Michael van Rooijen][] ( [@mrrooijen] )**  
+**Copyright (c) 2009-2016 [Michael van Rooijen][] ( [@mrrooijen] )**
 Released under the **MIT** [LICENSE](LICENSE).
 
 [Installation]:  http://backup.github.io/backup/v4/installation

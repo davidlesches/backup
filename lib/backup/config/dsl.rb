@@ -30,7 +30,7 @@ module Backup
               ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 'Riak', 'OpenLDAP', 'SQLite'],
               # Storages
               ['S3', 'CloudFiles', 'Ninefold', 'Dropbox', 'FTP',
-              'SFTP', 'SCP', 'RSync', 'Local', 'Qiniu'],
+              'SFTP', 'SCP', 'RSync', 'Local'],
               # Compressors
               ['Gzip', 'Bzip2', 'Custom', 'Pbzip2', 'Lzma'],
               # Encryptors
@@ -41,9 +41,7 @@ module Backup
                 { 'RSync' => ['Push', 'Pull', 'Local'] }
               ],
               # Notifiers
-              ['Mail', 'Twitter', 'Campfire', 'Prowl',
-              'Hipchat', 'PagerDuty', 'Pushover', 'HttpPost', 'Nagios',
-              'Slack', 'FlowDock', 'Zabbix', 'Ses', 'DataDog', 'Command']
+              ['Mail', 'HttpPost', 'Slack', 'Command']
             ]
           )
         end

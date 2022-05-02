@@ -30,14 +30,7 @@ group :production do
   gem 'net-scp'
   gem 'net-sftp'
   gem 'mail', '= 2.6.3' # patched
-  gem 'pagerduty'
-  gem 'twitter'
-  gem 'hipchat'
-  gem 'flowdock'
-  gem 'json'
-  gem 'dogapi'
-  gem 'aws-ses'
-  gem 'qiniu', '~> 6.5.1'
+  gem 'json', '1.8.6'
 end
 
 gem 'rspec'
@@ -46,12 +39,12 @@ gem 'mocha'
 gem 'timecop'
 
 # Omitted from Travis CI Environment
-group :no_ci do
-  gem 'rb-fsevent' # Mac OS X
-  gem 'rb-inotify' # Linux
-  gem 'pry'
-
-  gem 'yard'
-  gem 'redcarpet'
-  # gem 'rake' - this will interfere with `rake gemspec`
-end
+# group :no_ci do
+#   gem 'rb-fsevent' # Mac OS X
+#   gem 'rb-inotify' # Linux
+#   gem 'pry'
+#
+#   gem 'yard'
+#   gem 'redcarpet'
+#   # gem 'rake' - this will interfere with `rake gemspec`
+# end

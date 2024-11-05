@@ -22,7 +22,7 @@ source 'https://rubygems.org'
 group :production do
   gem 'thor'
   gem 'open4'
-  gem 'fog'
+  gem 'fog', '1.30'
   gem 'fog-aws'
   # gem 'excon' - use version specified by fog
   gem 'unf' # for fog/AWS

@@ -22,16 +22,16 @@ source 'https://rubygems.org'
 group :production do
   gem 'thor'
   gem 'open4'
-  gem 'fog'
+  gem 'fog-aws'
   # gem 'excon' - use version specified by fog
   gem 'unf' # for fog/AWS
-  gem 'dropbox-sdk', '1.6.5'
+  gem 'dropbox-sdk'
   gem 'net-ssh'
   gem 'net-scp'
   gem 'net-sftp'
-  gem 'mail', '= 2.6.3' # patched
-  gem 'json', '1.8.6'
-  gem 'nokogiri', '1.6.8.1'
+  gem 'mail'
+  gem 'json'
+  gem 'nokogiri'
 end
 
 gem 'rspec'

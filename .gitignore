@@ -1,0 +1,12 @@
+.DS_Store
+*.gem
+*.lock
+.bundle/
+vendor/bundle
+vagrant/spec/live/.cache
+vagrant/spec/live.yml
+*.swp
+*.swo
+.ruby-*
+doc/
+tmp/

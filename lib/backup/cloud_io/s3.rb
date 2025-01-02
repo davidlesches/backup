@@ -1,5 +1,5 @@
 require "backup/cloud_io/base"
-require "fog"
+require "fog-aws"
 require "digest/md5"
 require "base64"
 require "stringio"
@@ -121,20 +121,19 @@ module Backup
       private
 
       def connection
-        @connection ||=
-          begin
-            opts = { provider: "AWS", region: region }
-            if use_iam_profile
-              opts[:use_iam_profile] = true
-            else
-              opts[:aws_access_key_id] = access_key_id
-              opts[:aws_secret_access_key] = secret_access_key
-            end
-            opts.merge!(fog_options || {})
-            conn = Fog::Storage.new(opts)
-            conn.sync_clock
-            conn
+        @connection ||= begin
+          opts = { provider: "AWS", region: region }
+          if use_iam_profile
+            opts[:use_iam_profile] = true
+          else
+            opts[:aws_access_key_id] = access_key_id
+            opts[:aws_secret_access_key] = secret_access_key
           end
+          opts.merge!(fog_options || {})
+          conn = Fog::AWS::Storage.new(opts)  # changed from Fog::Storage
+          conn.sync_clock
+          conn
+        end
       end
 
       def put_object(src, dest)

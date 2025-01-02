@@ -29,9 +29,9 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "thor", "~> 0.18", ">= 0.18.1"
   gem.add_dependency "open4", "1.3.0"
-  gem.add_dependency "fog", "~> 2.3.0"
-  #gem.add_dependency "fog-core", "~> 2.4.0"
-  #gem.add_dependency "fog-aws", "~> 3.30.0"
+  # gem.add_dependency "fog", "~> 2.3.0"
+  gem.add_dependency "fog-aws", "~> 3.12.0"
+  gem.add_dependency "fog-core", "~> 2.4.0"
   gem.add_dependency "excon", "~> 0.58"
   gem.add_dependency "unf", "0.2.0" # for fog/AWS
   gem.add_dependency "net-ssh", "5.2.0"

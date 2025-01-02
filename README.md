@@ -1,4 +1,4 @@
 ```
-  gem install specific_install
-  gem specific_install https://github.com/davidlesches/backup
+  sudo gem install specific_install
+  sudo gem specific_install https://github.com/davidlesches/backup
 ```

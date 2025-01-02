@@ -31,13 +31,13 @@ Gem::Specification.new do |gem|
   gem.add_dependency "open4", "1.3.0"
   # gem.add_dependency "fog", "~> 2.3.0"
   gem.add_dependency "fog-aws", "~> 3.30.0"
-  gem.add_dependency "excon", "~> 0.71"
-  gem.add_dependency "unf", "0.1.3" # for fog/AWS
+  gem.add_dependency "excon", "~> 1.2"
+  gem.add_dependency "unf", "0.2.0" # for fog/AWS
   gem.add_dependency "net-ssh", "5.2.0"
   gem.add_dependency "net-scp", "~> 2.0.0"
   gem.add_dependency "net-sftp", "2.1.2"
   gem.add_dependency "mail", "~> 2.6", ">= 2.6.6"
-  gem.add_dependency "aws-sdk", "~> 2"
+  gem.add_dependency "aws-sdk", "~> 2.11"
   gem.add_dependency "nokogiri", "~> 1.10", ">= 1.10.9"
 
   gem.add_development_dependency "rubocop", "0.48.1"
